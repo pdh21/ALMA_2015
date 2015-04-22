@@ -2,7 +2,7 @@
 %% LaTeX template for the science justification to be       %%
 %%       submitted as part of an ALMA proposal.             %%
 %%                                                          %%
-%%                      ALMA Cycle 2                        %%
+%%                      ALMA Cycle 3                        %%
 %%                                                          %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -48,7 +48,7 @@
 %%%%% Default format: 12pt single column %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\documentclass[11pt,a4paper]{article}
+\documentclass[12pt,a4paper]{article}
 %11pt is smallest allowed
 
 \usepackage{graphics,graphicx}
@@ -59,6 +59,7 @@
 \usepackage[textsize=scriptsize]{todonotes}
 \usepackage{multicol}
 \usepackage{caption}
+\usepackage{hyperref}
 
 \newcommand{\herschel}{{\it Herschel}}
 \newcommand{\hermes}{HerMES}
@@ -135,23 +136,23 @@
 
 %% ENTER TEXT, FIGURES AND TABLES BELOW
 
-\section{Scientific Justification}
+{\large{\bf1 Scientific Justification}}
 
 {\bf Summary: }
 %
 The Cosmic Infrared Background (CIB; Puget et al.\ 1996; Fixsen et
 al.\ 1998; Lagache et al.\ 1999) peaks at wavelengths of
-$\sim200$\,\micron\ (e.g.\ Dole et al.\ 2006) and has an intensity that is roughly equal to the
-Cosmic Optical Background, which signifies that around half of stellar
+$\sim200$\,\micron\ (e.g.\ Dole et al.\ 2006) and has an intensity roughly equal to the
+Cosmic Optical Background, signifying that around half of stellar
 and AGN emission has been
 reprocessed by dust (Hauser \& Dwek 2001; Dole et al.\ 2006). Thus, to
-reveal the 50\% of enegy generation in the Universe that is dust-obscured, and consequently
+reveal the 50\% of energy generation in the Universe that is dust-obscured, and consequently
 its role in galaxy evolution, it is imperative that we study the dusty
 sources that comprise the CIB.
 %
 This program will observe band 7 (345GHz; 870\,\micron) continuum
-emission  from a statistically complete sample of
-100 \herschel-SPIRE sources with $S_{250}>35$mJy, in the UDS field, directly probing the galaxies that
+emission from a statistically complete sample of
+600 \herschel-SPIRE sources with $S_{250}>35$mJy, in the COSMOS field, directly probing the galaxies that
 contribute to the {\it peak} of the CIB. 
 
 \indent\indent\colorbox{tan}{
@@ -162,11 +163,11 @@ $\bullet$ Use the resolution of ALMA to reliably pin-point the galaxies
 that contribute to the peak of the CIB, and definitively identify
 their multi-wavelength counterparts in existing ancillary data.
 
-% $\bullet$ Assess the success, or otherwise, of statistical methods of
-% identifying \herschel-SPIRE sources. Determine the completeness and
-% reliability of methods that attempt to deblend these sources with
-% prior (typically shorter wavelength) multiwavelength information
-% (e.g.\ Roseboom \ea\ 2010, 2012).
+%$\bullet$ Assess the success, or otherwise, of statistical methods of
+%identifying \herschel-SPIRE sources. Determine the completeness and
+%reliability of methods that attempt to deblend these sources with
+%prior (typically shorter wavelength) multiwavelength information
+%(e.g.\ Roseboom \ea\ 2010, 2012, Hurley \ea in prep.).
 
 $\bullet$ Measure the redshift, dust temperature, infrared luminosity,
 stellar mass, and AGN contribution distributions of 250-\micron\
@@ -182,47 +183,55 @@ luminosity, temperature and stellar mass distributions for
 
 \end{minipage}}
 
-
-\vspace{0.3cm}
+%\vspace{0.3cm}
 {\bf The peak of the CIB: }
 %
 The CIB peaks at $\sim$200\micron\ (Dole et al.\ 2006) so analyses of
 the contributors selected at wavelengths around this peak are
 central to understanding the role of dust-obscured sources in the
-history of galaxy formation and evolution. 
-Although samples selected longer wavelengths (e.g.\ 850\,\micron,
+history of galaxy formation and evolution. Although samples selected at longer wavelengths (e.g.\ 850\,\micron,
 1.1\,mm) are interesting in their own right, they only have minimal overlap 
-with the galaxies that contribute to the peak of the CIB, and they are not an unbiased or complete
-sampling of those systems. Instead, if we are to understand the peak of
-the CIB, we must study the sources that are selected at $\sim200$\micron.
+with the galaxies that contribute to the peak of the CIB, and are biased towards the more extreme or higher redshift galaxies, whilst samples at shorter wavelengths (e.g. \ 24, 100\,\micron) are biased towards warmer and/or lower redshift galaxies.
 
-At wavelengths shortwards of 160\micron, deep \spitzer-MIPS and
-\herschel-PACS observations have resolved the majority of the CIB into
-individually detected galaxies (Papovich et al.\ 2004; B\'ethermin et
-al.\ 2010; Berta et al.\ 2011), and at 250\,\micron\ \herschel-SPIRE
-has resolved $\sim 20\%$ of the CIB at into individually detected
-250\micron\ ``sources'' with fluxes, $S_{250}\gtrsim 20$mJy (or
+At 250\,\micron\, \herschel-SPIRE observations are ideal for providing an unbiased selection of objects which significantly contribute to the peak of the CIB thus measuring the bolometric power whilst not biasing to warmer or cooler galaxies. Previous work has shown that 250\micron\ ``sources'' with fluxes, $S_{250}\gtrsim 20$mJy (or
 $\sim10\%$ with $S_{250}\gtrsim35$\,mJy; Oliver et
-al.\ 2010).  Indeed, \herschel-SPIRE is the premier instrument for
-wide-field extragalactic surveys at 250\micron, because it has the
+al.\ 2010) resolve $\sim 20\%$ of the CIB. \herschel-SPIRE is also the premier instrument for
+wide-field extragalactic surveys at around the peak of the CIB because it has the
 resolution, sensitivity and mapping speeds to resolve a substantial
 fraction of the CIB in
 uniform wide-field surveys (e.g.\ Oliver et al.\ 2010, Glenn et al.\
-2010, Viero et al.\ 2013).
-%
-The next step in characterising the dusty galaxies that cause the CIB
-is multi-wavelength follow-up of these \herschel-SPIRE 250\micron\
-sources.  However, the \herschel\ beam is 18\arcsec\ FWHM at
+2010, Viero et al.\ 2013). By understanding 250\,\micron\, \herschel-SPIRE sources, we open up SPIRE's legacy of over 1000 deg.$^2$ of data, which, with projects like the Herschel Extragalactic Legacy Project (HELP)\protect\footnotemark \, will be readily accessible to exploit. Although samples selected at 160\, \micron from the \herschel-PACS observations could provide a similar unbiased sample as 250\,\micron\, selected samples, they do not compete with this \textgreater 1000 deg.$^2$ \herschel-SPIRE legacy.
+
+\protect\footnotetext{HELP aims to provide new techniques, tools and data to enable astronomers in Europe to capitalise on the surveys of the distant Universe made by the ESA mission Herschel \url{https://herschellegacyproject.wordpress.com/}}
+
+The observations from \herschel-SPIRE observations have already been shown to have huge potential in underpinning the star formation rate of the universe (e.g. Burgarella et al.\ 2013), measuring clustering (Cooray et al. 2010), and understanding the star formation stellar mass main sequence (e.g. Elbaz et al. 2011). These studies have assumed galaxies at other wavelengths have been correctly identified with \herschel-SPIRE sources, however, the \herschel\ beam is 18\arcsec\ FWHM at
 250\micron\ and therefore identifying the multi-wavelength
 counterparts is not straightforward. Blending is also a problem, with
 multiple galaxies potentially contributing to a single \herschel\
-source. Therefore, although \herschel\ has done the work of identifing
-the sources that contribute to the CIB at 250\micron, the
-high-resolution and sensitivity of ALMA is required to reliably identify individual
-galaxies, so that robust multi-wavelength analyses can be undertaken.
+source. Therefore, although \herschel\ has done the work of identifying
+the sources that contribute to the CIB at 250\micron, assigning the sources to individual galaxies is still an ongoing problem. 
 
+%
+%
+%
+%The next step in characterising the dusty galaxies that cause the CIB
+%is multi-wavelength follow-up of these \herschel-SPIRE 250\micron\
+%sources.  However, the \herschel\ beam is 18\arcsec\ FWHM at
+%250\micron\ and therefore identifying the multi-wavelength
+%counterparts is not straightforward. Blending is also a problem, with
+%multiple galaxies potentially contributing to a single \herschel\
+%source. Therefore, although \herschel\ has done the work of identifying
+%the sources that contribute to the CIB at 250\micron, assigning the sources to individual galaxies is still an ongoing problem.
+%
+%At wavelengths shortwards of 160\micron, deep \spitzer-MIPS and
+%\herschel-PACS observations have resolved the majority of the CIB into
+%individually detected galaxies (Papovich et al.\ 2004; B\'ethermin et
+%al.\ 2010; Berta et al.\ 2011). However, there are still SPIRE sources for which there are no shorter wavelength counterparts, with the likely candidates being high redshift galaxies not detected in the optical, near or mid infrared. The high-resolution and sensitivity of ALMA is required to detect and reliably identify individual
+%galaxies, especially those at higher redshift, so that robust multi-wavelength analyses can be undertaken.
 
-
+%Herschel probes see, unbiased selection of objects... SCUBA 2 biased to high redshift.. SFR universe, clustering, main sequence... all of that assumes identifications correct, multiplicity need to understand.. alongside confusion.. distributing flux across objects..
+%need to make case as to why 24micron not good enough.
+%why archival data isn't good enough.. makes assumption about FIR see and we don't want to do that. We want sample to train on
 \vspace{0.3cm}
 {\bf The difficulty in identifying multi-wavelength counterparts to
   250-\micron\ sources:}
@@ -232,27 +241,18 @@ The spatial resolution of single-dish submillimeter observatories
 identification of multi-wavelength counterparts to the submillimeter
 sources that  contribute to the CIB challenging. The number density of
 optical and near-infrared galaxies is such that several are detected
-within each 250\micron\ beam (e.g.\ Figure~\ref{fig:cfaless}), and therefore nearest-neighbour
+within each 250\micron\ beam (e.g.\ Figure~\ref{fig:cfaless}). This produces two distinct problems: 
+
+\noindent\begin{minipage}{0.58\textwidth}
+
+\hspace{0.2cm}
+(1) identifying which galaxy from multiple candidates is the `true' match using nearest-neighbour
 matching is insufficient for counterpart identification. Instead,
 previous studies have used statistical methods to directly identify
 optical counterparts (e.g.\ Smith et al.\ 2010) or to first identify
 mid-infrared or radio counterparts to \herschel-SPIRE sources and then match
 these to optical catalogues (e.g.\ Roseboom \ea\ 2010; Fleuren \ea\
-2012; Kim \ea\ 2012).
-
-\noindent\begin{minipage}{0.58\textwidth}
-
-\hspace{0.2cm}
-Although this approach can be successful for a fraction of sources
-(e.g.\ Figure~\ref{fig:cfaless}) there are three substantial
-limitations, all of which are directly addressed by the proposed ALMA
-observations. Indeed, it is only with the combination of ALMA and
-\herschel\ data that the galaxies whose emission contributes to the
-CIB can be studied in full. The three main challenges of indirect
-statistical methods of identifying counterparts of \herschel\ sources
-are:
-%
-(1) Only 40--80\% of sources are statistically identified (depending
+2012; Kim \ea\ 2012). However, only 40--80\% of sources are statistically identified (depending
 on the wavelength and depth of the matched catalogue), so the nature
 of the remaining 20--60\% cannot be determined. The unidentified
 sources are not a random subset of the parent sample so this
@@ -261,40 +261,31 @@ peak of the redshift distribution of 250-\micron\ selected sources is
 likely underestimated because many of the unidentified sources are the
 highest-redshift galaxies, which are faint at optical, near- and
 mid-infrared, and radio wavelengths, and may not be detected
-even in deep imaging.
-%
-(2) Counterparts identified using the statistical approach are {\it on
-  average} correct. However, the methods are, by nature,
+even in deep imaging. Although counterparts identified using the statistical approach are {\it on
+  average} correct, the methods are, by nature,
 probabilistic. Therefore, we can never be sure whether the correct
 counterpart to any one source has been identified. As such,
 detailed studies of individual galaxies will always involve some intrinsic
 uncertainty, the effect of which can only be quantified with
 unambiguous identifications from submillimeter interferometry.
-%
-(3) Statistical identification methods assume that each 250-\micron\
+
+(2) Statistical identification methods assume that each 250-\micron\
 source is associated with exactly one galaxy, when there may actually
 be multiple counterparts (Figure~\ref{fig:cfaless}; see e.g.\ Hodge \ea\ 2013 for a
 discussion). This intrinsic assumption can result in only a single
 counterpart being identified when multiple galaxies are actually
-responsible for the SPIRE emission. In some cases no counterparts will
-be identified because the statistical likelihood of each one
-being the sole submillimeter source is below the level for formal
-identification.
-
+responsible for the SPIRE emission (e.g. Figures \ref{fig:cfaless} and \ref{fig:triplots}).
 \end{minipage}
-%
-\hspace{0.02\textwidth}
-%
 \noindent\begin{minipage}{0.38\textwidth}
-\centering\includegraphics[width=5cm]{cfaless.eps} 
-\captionof{figure}{{\small ALMA 870-\micron\ contours (red) overlaid on
+\centering\includegraphics[width=5cm]{cfaless} 
+\captionof{figure}{ALMA 870-\micron\ contours (red) overlaid on
     24\micron\ (left) and {\it RIz} images (right) centered on four 
     250-\micron\ selected sources with ALMA data from the
     ALESS survey\protect\footnotemark (Hodge et al.\ 2013). The white circle is the 250-\micron\ beam. In some
     cases the 24\micron\ data are sufficient to identify the correct
     counterpart (e.g.\ bottom panel), but in others the 24\micron\ is
     complicated (e.g.\ top panel), or identifies the wrong counterpart or
-    only one of several true counterparts (e.g.\ middle panels).}}
+    only one of several true counterparts (e.g.\ middle panels).}
 \label{fig:cfaless}
 \end{minipage}
 
@@ -306,14 +297,14 @@ identification.
   primary beam may be missed. Though these data are informative as in
   Figure~\ref{fig:cfaless}, the small number of sources with
   overlapping data within the primary beam means that they are
-  insufficient to acheive our science goals. }
-
+  insufficient to achieve our science goals. }
+%
 \begin{figure}
   \centering
-  \includegraphics[width=8.5cm]{f24_f250_vs_z_jw.eps}
+  \includegraphics[width=8.5cm,page={1}]{f24_f250_vs_z_jw}
 \hspace{0.5cm}
-  \includegraphics[width=8.5cm]{f870_f250_vs_z_jw.eps}
-  \caption{{\small 24\micron-to-250\micron\ {\it (left)} and
+  \includegraphics[width=8.5cm,page={2}]{f24_f250_vs_z_jw}
+  \caption{ 24\micron-to-250\micron\ {\it (left)} and
       870\micron-to-24\micron\ {\it (right)} flux ratios of SED
       templates from Xu et al.\ (2003) {\it (blue)} and Efstathiou et
       al.\ (2000) {\it (green)}, scaled to $S_{250}=35$mJy so that the $y$-axis shows
@@ -324,10 +315,9 @@ identification.
       effective at identifying these galaxies. The 870\micron\ and
       24\micron\ datasets are complementary and it is only with the combination of \herschel, ALMA and
     \spitzer\ (24\micron) that all the galaxies that comprise the peak of CIB can be
-    recovered and examined.}}
+    recovered and examined.}
 \label{fig:fromseb}
 \end{figure}
-
 %%  {\bf Source blending in the \herschel-SPIRE beam:}
 %%  %
 %%  The large \herschel\ beam at 250\micron, coupled with the surface
@@ -347,8 +337,6 @@ identification.
 %%  interferometry of classic $\sim850$-\micron\ selected SMGs shows that
 %%  blending is prevalent in those samples, with $\sim35\%$ of them being composed of
 %%  multiple components (Hodge et al.\ 2013).
-
-\vspace{0.3cm}
 {\bf Using priors to identify the galaxies contributing to the CIB
   at 250-\micron:}
 %
@@ -365,38 +353,37 @@ approaches are useful they provide an incomplete view of the galaxies
 that comprise the CIB. To complete the samples in these studies, and recover the cooler
 submillimeter emitting galaxies, requires observations at longer
 wavelengths, at resolutions that, for statistically meaningful samples, can only be provided by
-the sensitive interferometric abilities of ALMA.  
+the sensitive interferometric abilities of ALMA. Indeed, the need for ALMA observations has already been highlighted in Bussmann \ea\  (submitted), where it has been shown that there are distinct ALMA sources close to 24\micron sources such that flux estimates alter substantially when taking into account the high redshift counterparts (e.g. Figure \ref{fig:triplots}).
 
-
-\vspace{0.3cm}
 {\bf This proposal:}
 %
 We will perform 870-\micron\ observations of a statistically complete
-sample of 100 \herschel-SPIRE 250\micron\ selected sources. The
+sample of 600 \herschel-SPIRE 250\micron\ selected sources within the COSMOS field. The
 targets are a subset of the $S_{250}>35$\,mJy ($>5\sigma$, including
-confusion noise) HerMES UDS catalogue that have been carefully selected
+confusion noise) HerMES COSMOS catalogue that have been carefully selected
 to match the 250\micron\ flux distribution, as well as the
-$S_{250}/S_{350}$ and $S_{350}/S_{500}$ distribition of the whole
+$S_{250}/S_{350}$ and $S_{350}/S_{500}$ distribution of the whole
 catalogue. Thus, our targets are a statistically complete and
-representative population of the brightest $\sim10\%$ of the CIB.
-HerMES is the premier wide-area \herschel-SPIRE survey of premier
-extragalactic survey fields, including the UDS (Oliver et al.\
-2012), which is one of the most well-studied extragalactic survey
-fields. As such the UDS has ample ancillary data coverage, including deep optical and
+representative population of the brightest $\sim10\%$ of the CIB. By using the COSMOS field (1.2 $\times$ 1.2 degrees) which is one of the most well-studied extragalactic survey
+fields and therefore has the best collection of auxiliary data, including deep optical and
 near-infrared photometry and spectroscopy, and mid-infrared and radio
-photometry, which are key to our main science goals.
+photometry, thereby allowing us to sample the ``normal"(~L*) population through a large fraction of cosmic time. 
+\vspace{0.2cm}
 
-The choice of a large sample of 100 targets is driven by the
+\noindent\begin{minipage}{0.40\textwidth}
+
+\hspace{0.2cm}
+The choice of a large sample of 600 targets is driven by the
 requirement to robustly statistically examine the population as a
 whole, as well as consider evolution by binning the targets in
-250\micron\ flux and redshift. With the  100 targets we
-will be able to consider 5 flux bins, of 20 sources each, sufficient
-to examine changes in redshift distribution with 250\micron\ flux.
+250\micron\ flux and redshift. With the 600 targets we
+will be able to consider up to 6 flux bins, sufficient
+to examine changes in redshift distribution or dust temperature with 250\micron\ flux.
 %
 By performing the observations at a longer wavelength
 than the peak of the dust SEDs the data will be sensitive to cool dust
 emission and therefore complement the existing 24\micron\ maps
-(Figure~\ref{fig:fromseb}). Furthermore, the selected wavelength
+(Figures~\ref{fig:fromseb} and \ref{fig:triplots}). Furthermore, the selected wavelength
 matches existing and ongoing high-resolution surveys of $\sim870$ and
 1100-\micron\ selected sources (e.g.\ Hodge et al.\ 2013; Simpson et
 al.\ 2013). Therefore, our observations of the 250-\micron\ sources
@@ -407,15 +394,22 @@ Furthermore, the ALMA band 7 primary beam matches the resolution of
 \herschel\ at 250\micron, such that we do not have to be concerned
 with potential counterparts residing outside of the spatial area to
 which ALMA is sensitive.
+\end{minipage}
+\noindent\begin{minipage}{0.60\textwidth}
+\centering\includegraphics[width=10cm]{250XID+beta_ADFS04_merged.pdf} 
+\captionof{figure}{An example contour plot showing how the \herschel-SPIRE 250\micron\ fluxes differ for HADFS04 (Bussmann \ea\ submitted), when considering only a 24\micron\  source (black), ALMA sources (red) and when both are considered (blue). Deblending is done with XID+, software being developed as part of HELP (Hurley \ea\  in prep.)}
+\label{fig:triplots}
+\end{minipage}
+\vspace{0.2cm}
 
-For the 100 targeted sources we will examine the galaxies
+For the 600 targeted sources we will examine the galaxies
 identified by ALMA in the existing UV -- near-IR to build and fit
 stellar SEDs. These will be used to measure photometric redshifts and
 stellar masses of the 250-\micron\ selected galaxies (e.g.\ Wardlow et
 al.\ 2011). We will also use the ALMA and (existing) 24\micron\
 positional information as priors to deblend the HerMES 100, 160, 250,
 350 and 500\micron\ maps and build robust far-infrared SEDs for each
-galaxy (e.g.\ Roseboom et al.\ 2010, Swinbank et al.\ 2013). The
+galaxy using state of the art deblending software, being developed as part of HELP. The
 proposed observations are essential to unlock the information in the
 submillimeter survey and archival data by linking them together, a
 task that would be impossible without ALMA.
@@ -457,18 +451,18 @@ these galaxies.
 %%  Check duplications
 
 
-\vspace{0.3cm}
+\vspace{0.2cm}
 {\bf Observing strategy:}
 %
-We will observe the 100 250-\micron\ selected targets in continuum
+We will observe the 600 250-\micron\ selected targets in continuum
 mode in ALMA band 7, centering the observations at 343\,GHz
 (873\micron). 
 %
 The requested resolution of 1'' is sufficient to positionally match
-ALMA data to the existing imaging in the UDS. The target depth of 0.2mJy/beam
+ALMA data to the existing imaging in the COSMOS field. The target depth of 0.2mJy/beam
 is required to solidly detect the galaxies at $\ge5\sigma$ even in
 cases where the 250-\micron\ selected source is a blend of 2--3
-galaxies. 870\,\micron\ fluxes are predicted  by fitting various SED
+galaxies. 870\,\micron\ fluxes are predicted by fitting various SED
 templates (Efstathiou et al.\ 2000; Xu et al.\
 2003; Poletta et al.\ 2007) to the \herschel\ photometry, leaving
 redshift as a free parameter. The expectations from the SED fits are
@@ -522,8 +516,8 @@ in ECDFS (Figure~\ref{fig:cfaless}).
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Potential for Publicity %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Potential for Publicity}
+\vspace{0.2cm}
+{\large{\bf 2 Potential for Publicity}}
 
 % Here, include a brief statement on the potential of your proposal
 % to generate publicity based on the scientific results to be obtained.
@@ -554,7 +548,7 @@ multi-wavelength data.  We
 will work closely with the ALMA Education and Public Outreach team to
 prepare these. Since this project involves \herschel-selected sources,
 we will also have \herschel\ ESA and NASA outreach resources at our
-disposal. The results will be of interest to the general astronomical
+disposal. As ALMA observations will illustrate the need for software such as HELP's XID+ for deblending the SPIRE maps, we will also use the HELP outreach team to promote the power (and need) for ALMA. The results will be of interest to the general astronomical
 community and will effectively demonstrate the unique power of ALMA to
 potential users and to the public.  We will disseminate the results to
 the astronomical community via publications and presentations at
@@ -563,22 +557,27 @@ conferences and seminars.
 %%%%%%%%%%%%%%%%%%%%%%%%
 %% References section: %
 %%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{References}
+\vspace{0.2cm}
+{\large{\bf 3 References:}}
 {\small
 B\'ethermin et al.\ 2010, A\&A, 512, 78 $\bullet$
 B\'ethermin et al.\ 2011, A\&A, 529, 4 $\bullet$ 
 B\'ethermin et al.\ 2012, A\&A, 542, 58 $\bullet$
+Burgarella et al. \ 2013 A\&A, 554, 70 $\bullet$
+Bussmann et al. \ submitted $\bullet$
 Berta et al.\ 2011, A\&A, 532, 4 $\bullet$
+Cooray et al. \ 2010, A\&A 518, 22, $\bullet$
 Dole et al.\ 2006, A\&A, 451, 417 $\bullet$
 Dowell et al.\ 2013, arXiv:1310.7583 $\bullet$
 Efstathiou et al.\ 2000, MNRAS, 313, 734 $\bullet$
+Elbaz et al. \ 2011, A\&A, 533, 119 $\bullet$
 Fixsen et al.\ 1998, ApJ, 508, 123 $\bullet$
 Fleuren et al.\ 2012, MNRAS, 423, 2407 $\bullet$
 Glenn et al.\ 2010, MNRAS, 409, 109 $\bullet$
 Hauser \& Dwek, 2001, ARA\&A, 39, 249 $\bullet$
 Hayward et al.\ 2012, 424, 951 $\bullet$
 Hodge et al.\ 2013, ApJ, 768, 91 $\bullet$
+Hurley et al. \ in prep. $\bullet$
 Kim et al.\ 2012, ApJ, 756, 28 $\bullet$
 Lagache et al.\ 1999, A\&A, 344, 322 $\bullet$
 Oliver et al.\ 2010, A\&A, 518, L21 $\bullet$
